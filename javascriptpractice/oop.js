@@ -20,7 +20,7 @@ class BankAccount{
             case "email":
                 return this.DOB;
                 break;
-                case "email":
+                case "balance":
                     return this.balance;
                     break;
                 default:
@@ -43,7 +43,21 @@ class BankAccount{
     }
 }
 
+class Savings extends BankAccount {
+    constructor(name, DOB, address, email, balance, active, interest, withdrawalLimit ){
+        super(name, DOB, address, email, balance);
+        this.active = active;
+        this.interest = interest;
+        this.withdrawalLimit = withdrawalLimit;
+    } isActive(){
+        if(this.active){
+            return 'This account is active'
+        }
+    }
 
-const sushantAcc = new BankAccount("Sushant", "11 Oct 1992", "Toronto", "sk@gmail.com", 2000)
+}
 
- console.log(sushantAcc.withdraw(200));
+
+
+const sushantAcc = new Savings("Sushant", "09 Oct 1778", "Toronto", "s.q@gmail.com", 5000, true, 0.5, 2000);
+
