@@ -22,4 +22,40 @@ const elementSwap = function (arr) {
     occupation: "Engineer"
   };
   userDtaiil(user);
+
+
+  // Write a function that takes an object representing a shopping cart with items and their quantities. Use a for loop to calculate the total price of all items in the cart.
+  const shoppingCart = {
+    itemOne: {
+      item: "Soap",
+      price: 10,
+      quantity: 5
+    },
+    itemtwo: {
+      item: "loofa",
+      price: 20,
+      quantity: 1
+    },
+    itemThree: {
+      item: "Shampoo",
+      price: 35,
+      quantity: 2
+    }
+  };
+  
+  const priceCalculator = function (shoppingCart) {
+    let totalAmount = null;
+    let message = " ";
+    //console.log(shoppingCart.itemOne.price)
+    for (let items in shoppingCart) {
+      const { item, price, quantity } = shoppingCart[items];
+      const itemTotalAmount = price * quantity;
+      totalAmount = totalAmount + itemTotalAmount;
+      message += `${item} (${price} * ${quantity}): ${itemTotalAmount}\n`;
+    }
+    message += `Total: CAD ${totalAmount}`;
+    return message;
+  };
+  
+  console.log(priceCalculator(shoppingCart));
   
