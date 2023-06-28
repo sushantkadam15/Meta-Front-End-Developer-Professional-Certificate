@@ -59,3 +59,39 @@ const elementSwap = function (arr) {
   
   console.log(priceCalculator(shoppingCart));
   
+  //3.a For-of loops with objects:Create an object that represents a playlist with songs as keys and their durations as values. Use a for-of loop to calculate the total duration of the playlist.
+// b. Given an object representing a dictionary with words as keys and their meanings as values, use a for-of loop to print all the words in uppercase.
+
+
+
+const playList = {
+  boysInTheHood: 210,
+  fireWorks: 120,
+  uproar: 138,
+  tenuSamjawa: 360
+}
+
+
+let totalPlaylistDuration = null;
+for(let duration of Object.values(playList)){
+  totalPlaylistDuration += duration;
+}
+
+console.log(`Total Dusation of the playlist is ${Math.floor(totalPlaylistDuration/60)} mins ${totalPlaylistDuration % 60} Secs `)
+
+const dictionary = {
+  Serene: 'calm, peaceful, and untroubled',
+  Resilient: 'able to recover quickly from difficulties or setbacks',
+  Enigma: 'a person or thing that is mysterious, puzzling, or difficult to understand',
+  Eloquent: 'fluent or persuasive in speaking or writing',
+  Pristine: 'in its original condition; unspoiled or untouched',
+  Avid: 'having a strong passion or enthusiasm for something',
+  Benevolent: 'kind, generous, and concerned for others well-being',
+  Ambiguous: 'having multiple possible interpretations or meanings',
+  Prolific: 'producing or creating abundantly or at a high rate',
+  Exquisite: 'extremely beautiful, delicate, or intricate'
+};
+
+for (let word of Object.keys(dictionary)) {
+  console.log(word.toUpperCase());
+}
