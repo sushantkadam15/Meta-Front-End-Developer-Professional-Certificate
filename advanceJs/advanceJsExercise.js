@@ -95,3 +95,62 @@ const dictionary = {
 for (let word of Object.keys(dictionary)) {
   console.log(word.toUpperCase());
 }
+
+
+// Given an array of objects representing books with properties like title, author, and year, use the map method to create a new array with only the titles of the books.
+// Write a function that takes an object representing a product with properties like name, price, and quantity. Use the reduce method to calculate the total value of the product.
+const books = [
+  {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    year: 1960
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    year: 1949
+  },
+  {
+    title: "Pride and Prejudice",
+    author: "Jane Austen",
+    year: 1813
+  },
+  {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    year: 1925
+  }
+];
+
+const bookCollection = books.map((book) => book.title)
+console.log(bookCollection)
+
+//b
+
+const products = [
+  {
+    name: "iPhone",
+    price: 999,
+    quantity: 10
+  },
+  {
+    name: "Laptop",
+    price: 1499,
+    quantity: 5
+  },
+  {
+    name: "Headphones",
+    price: 99,
+    quantity: 20
+  },
+  {
+    name: "Smartwatch",
+    price: 199,
+    quantity: 8
+  }
+];
+
+const totalCart = products.reduce((accumulator, product) => {
+  return accumulator + product.price * product.quantity
+},0);
+console.log('$ ' + totalCart)
