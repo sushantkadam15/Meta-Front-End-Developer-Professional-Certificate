@@ -8,7 +8,7 @@ I am currently pursuing the Meta Front-End Developer Professional Certificate to
 
 ## Structure
 
-The repository is organized into separate folders for each assignment or practice exercise.
+The repository is organized into separate folders for each assignment or practice exercise. NOTE: Most of the exercises are done within Coursera Labs.
 
 ## Courses Completed and Certificates
 
