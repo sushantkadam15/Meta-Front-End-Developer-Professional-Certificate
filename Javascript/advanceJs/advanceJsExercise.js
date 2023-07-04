@@ -154,3 +154,52 @@ const totalCart = products.reduce((accumulator, product) => {
   return accumulator + product.price * product.quantity
 },0);
 console.log('$ ' + totalCart)
+
+//Spread
+
+//a. Write a function that takes two arrays and returns a new array combining the elements from both arrays using the spread operator.
+
+const combineArrays = (arr1, arr2) => [...arr1, ...arr2];
+
+//Given an object representing a person with properties like name and age, create a new object with additional properties using the spread operator.
+const person = {
+  name: "SK",
+  age: 25,
+}
+
+const personAdditionalDetaisl = {
+  ...person,
+  college: "UFV",
+  occupation: "IT"
+}
+console.log(personAdditionalDetaisl)
+
+//6. Rest 
+// Write a function that takes a variable number of arguments and returns their sum using the rest parameter.
+// Given an object representing a restaurant menu with dishes as keys and their prices as values, create a function that takes the menu object and prints all the dish names using the rest parameter.
+
+const calculateSum = (...numbers) => {
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  return sum;
+};
+
+//b
+
+const menu = {
+  "Spaghetti Bolognese": 12.99,
+  "Margherita Pizza": 9.99,
+  "Caesar Salad": 8.49,
+  "Grilled Salmon": 16.99,
+  "Cheeseburger": 10.99
+};
+
+const printDishNames = (menu) => {
+  const dishNames = Object.keys(menu);
+  console.log(dishNames);
+};
+
+
+printDishNames(menu)
