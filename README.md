@@ -8,7 +8,17 @@ I am currently pursuing the Meta Front-End Developer Professional Certificate to
 
 ## Structure
 
-The repository is organized into separate folders for each assignment or practice exercise. Within each folder, you will find the necessary files and resources specific to that particular task. Additionally, there may be a README.md file providing instructions or additional information for the assignment.
+The repository is organized into separate folders for each assignment or practice exercise.
+
+## Courses Completed and Certificates
+
+I have completed the following courses as part of the Meta Front-End Developer Professional Certificate program:
+
+1. [Introduction to Front-End Development](https://coursera.org/share/b79ba831134bbef23c36768ca071b9d4)
+2. [Programming with JavaScript](https://coursera.org/share/e51a1003efbd0b7182aca531e7ebf6f0)
+3. [Version Control](https://coursera.org/share/9953c74eaeb424f9a3d65622b611e193)
+
+You can click on the course names to access the respective course completion certificates.
 
 ## Technologies and Tools
 
@@ -22,7 +32,6 @@ The Meta Front-End Developer Professional Certificate program covers a variety o
 - Git
 
 I will be utilizing these technologies and tools throughout the program to complete the assignments and practices.
-
 
 ## Certificate Completion
 
