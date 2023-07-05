@@ -1,6 +1,6 @@
 /* Testing using Jest:
 Write a test case using Jest to check if a function correctly sorts an array of numbers in ascending order.
-Create a test suite using Jest to test a calculator object that has methods for addition, subtraction, multiplication, and division. */
+Create a test suite using Jest to test a calculator object that has methods for addition, subtraction, multiplication. */
 
 const arraySort = function(arr){
   return arr.sort((a,b) => a - b)
@@ -24,4 +24,4 @@ function calculator(num1, num2){
 }
 
 
-module.exports = arraySort
+module.exports = {arraySort, calculator}
