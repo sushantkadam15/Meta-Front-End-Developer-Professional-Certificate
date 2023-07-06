@@ -20,11 +20,11 @@
   </nav>
   <main>
     <form action="#" method="post">
-      <div><label for="user_first_name">First Name: </label><input type="text" id="user_first_name" name="user_first_name"></div>
-      <div><label for="user_last_name">Last Name: </label><input type="text" id="user_last_name" name="user_last_name"></div>
-      <div><label for="user_email">Email: </label><input type="email" id="user_email" name="user_email"></div>
-      <div><label for="user_password"">Password: </label><input type=" password" id="user_password" name="user_password"></div>
-      <div><label for="user_confirmed_password">Re-type Password: </label><input type="password" id="user_confirmed_password" name="user_confirmed_password"></div>
+      <div><label for="user_first_name">First Name: </label><input type="text" id="user_first_name" name="user_first_name" required></div>
+      <div><label for="user_last_name">Last Name: </label><input type="text" id="user_last_name" name="user_last_name" required></div>
+      <div><label for="user_email">Email: </label><input type="email" id="user_email" name="user_email" required></div>
+      <div><label for="user_password"">Password: </label><input type=" password" id="user_password" name="user_password" required minlength="4"></div>
+      <div><label for="user_confirmed_password">Re-type Password: </label><input type="password" id="user_confirmed_password" name="user_confirmed_password" required minlength="4"></div>
       <div style="display: inline-block;">
         <button type="submit">Signup</button>
         <button type="reset">Clear</button>
@@ -35,6 +35,9 @@
   <style>
     form>div {
       padding: 5px;
+    }
+    input:focus:invalid{
+      border: 2px solid red;
     }
   </style>
 </body>
